@@ -1,1 +1,19 @@
 /* pages/home/home.wxss */
+.vi1{
+  background: green;
+}
+.vi2{
+  height: 100px;
+  width: 100px;
+  background:rgba(83, 3, 59, 0.233);
+}
+.hover-class1{
+  background:red;
+}
+.hover-class2{
+  background: blueviolet;
+}
+input{
+border: 1px solid red;
+margin: 10px 10px;
+}

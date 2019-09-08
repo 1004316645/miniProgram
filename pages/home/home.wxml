@@ -1,2 +1,38 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- input的基本使用 -->
+<input value="这是input"/>
+<input type="number"/>
+<input type="idcard"/>
+<input type="digit"/>
+<input type="digit" password="true"/>
+<input type="digit"  placeholder="你好"/>
+
+
+
+
+<view>=======================================</view>
+<text selectable="{{true}}">这是一个页面\n</text>
+<text>这是第二条\n</text>
+<button size="mini">button</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<cover-image src="https://www.baidu.com/img/bd_logo1.png"></cover-image>
+<view class="vi2" hover-class="hover-class2">
+<view class="vi1" 
+hover-class="hover-class1"
+hover-start-time="1000" 
+hover-stay-time="1000"
+hover-stop-propagation="{{true}}">这是一个view</view>
+</view>
+<image src="../../image/1.jpg"/>
+<image src="https://www.baidu.com/img/bd_logo1.png"/>
+<image src="{{imgagepath}}"></image>
+<button bindtap="handleChooseAlbum">选择照片</button>
+<view>----------------------------------</view>
+<!-- 开启长按识别码 -->
+<image src="https://www.baidu.com/img/bd_logo1.png" show-menu-by-longpress="{{true}}"/>
+<view>----------------------------------</view>
+<image wx:for="{{5}}" src="https://www.baidu.com/img/bd_logo1.png"
+bindload="handleImageLoad"
+lazy-load="{{true}}"/>
